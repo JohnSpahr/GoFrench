@@ -1,5 +1,5 @@
 # GoFrench
-GoFrench is a French to English (and vice versa) translation tool and dictionary. It finds the best translation and definition for a word or phrase from two sources. (WordReference and Linguee) 
+GoFrench is a French to English (and vice versa) translation tool. It finds the best translation and definition for a word or phrase from two sources. (WordReference and Linguee) 
 
 ### How does it work?
 To use GoFrench, simply enter a word or phrase into the text box. If you only enter one word, you will be sent to WordReference which does a really good job at describing a specific word. If you type in multiple words, however, you will be sent to Linguee, a website that gives great definitions and translations for multiple words and phrases.
