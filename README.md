@@ -11,4 +11,10 @@ If you can just go the WordReference or Linguee, why would you use GoFrench? Put
 GoFrench isn't finished! There is still a lot of improvements we can make. I don't care what you do with it, as long as you credit me. (John Spahr)
 
 ### Visit our website
-The GoFrench Website: https://sites.google.com/view/gofrench.
+Want to try out GoFrench! If so, you should visit our website: https://sites.google.com/view/gofrench.
+
+### Link to the code
+Here is a link to the code: https://github.com/JohnSpahr/GoFrench/blob/master/GoFrench.html.
+
+### Screenshot
+![Image of GoFrench]("https://github.com/JohnSpahr/GoFrench/blob/master/86D132BD-F951-438E-BC8D-372A50604FB9.jpeg?raw=true")
