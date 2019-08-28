@@ -1,3 +1,4 @@
+![logo](https://lh5.googleusercontent.com/iDEw2yZ-Ge7UDdwLMKjd9S7BoZsiXdB6B_Hl-I5AaN41RWD3LY3zxZtkBdjS1eU57IP-r80=w16383)
 # GoFrench
 GoFrench is a French to English (and vice versa) translation tool. It finds the best translation and definition for a word or phrase from two sources. (WordReference and Linguee) 
 
