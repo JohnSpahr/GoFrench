@@ -20,4 +20,4 @@ Here is a link to the code: https://github.com/JohnSpahr/GoFrench/blob/master/Go
 This link downloads the branch: https://github.com/JohnSpahr/GoFrench/archive/master.zip.
 
 ### Screenshot
-![Image of GoFrench](https://github.com/JohnSpahr/GoFrench/blob/master/86D132BD-F951-438E-BC8D-372A50604FB9.jpeg?raw=true)
+![Image of GoFrench](https://raw.githubusercontent.com/JohnSpahr/GoFrench/master/Screenshot%20(1).png)
