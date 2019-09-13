@@ -14,7 +14,7 @@ GoFrench isn't finished! There is still a lot of improvements we can make. I don
 Want to try out GoFrench! If so, you should visit our website: https://sites.google.com/view/gofrench.
 
 ### Link to the code
-Here is a link to the code: https://github.com/JohnSpahr/GoFrench/blob/master/GoFrench.html.
+Here is a link to the code: https://github.com/JohnSpahr/GoFrench/blob/master/GoFrench%20v1.2.html.
 
 ### Download branch
 This link downloads the branch: https://github.com/JohnSpahr/GoFrench/archive/master.zip.
