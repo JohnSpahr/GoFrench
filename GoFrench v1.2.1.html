@@ -1,0 +1,93 @@
+<!DOCTYPE html> 
+
+<html>
+    <head>
+        <style type="text/css">
+            body.serif {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 15px;
+            }
+
+            .txt {
+                height: 30px;
+            }
+
+            .field {
+                border-color: rgb(19, 79, 209);
+            }
+
+            .radioBtn {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 15px;
+            }
+
+            .button {
+                background-color: rgb(19, 79, 209);
+                padding: .5em;
+                -moz-border-radius: 5px;
+                -webkit-border-radius: 5px;
+                border-radius: 6px;
+                color: #fff;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 15px;
+                text-decoration: none;
+                border: none;
+            }
+
+            .button:hover {
+                border: none;
+                background: rgb(0, 140, 255);
+                cursor:pointer;
+            }
+        </style>
+    </head>
+    <body class="serif">
+        
+        <fieldset class="field">
+            <legend>GoFrench</legend>
+                <p class="serif">
+                    <label>Search query: </label>
+                    &nbsp;
+                    <input class="txt" type="text" id="inputTxt" size="25" value="" tag autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" onkeypress="return txtChange(event) "/>
+                    &nbsp;
+                    <button class="button" onclick="getSite();" style="width:50px;">Go</button>
+
+                    <script>
+                        function txtChange(e) {
+                            if(e.keyCode == 13) {
+                                //if enter key is pressed, get site
+                                getSite();
+                                return false;
+                            }
+                        }
+
+                        function getSite() {
+							var inputString = document.getElementById("inputTxt").value.trim();
+                            if (inputString != '') //makes sure text box isn't blank
+                            {
+                                var content = document.getElementById('inputTxt').value; //sets variable "content" to text box value
+                                var countText = content.trim(); //removes unnecessary spaces at the end of text
+                                var count = (countText.match(/ /g) || []).length; //gets number of spaces in text box.
+                            
+                                if(count == 0 ){ //no spaces
+                                    //open wordreference
+                                    window.open('http://www.wordreference.com/enfr/' + countText, '_blank');
+                                } else { //spaces
+                                    //open linguee
+                                    window.open('http://linguee.com/english-french/search?source=auto&query=' + countText, '_blank');
+                                }
+                            }
+                            else
+                            {
+                                alert("Please enter a search query."); //if input is blank
+                            }
+                        }
+                    </script>
+                </p>
+            </fieldset>   
+            <br> 
+            <label>Version 1.2.1 - Created by John Spahr</label>         
+    </body>
+</html>
+
+<!-- Created by John Spahr. Visit his website at http://tectrasystems.org. Thank you for using GoFrench ! -->
