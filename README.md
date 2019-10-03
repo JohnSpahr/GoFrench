@@ -19,5 +19,8 @@ Here is a link to the code: https://github.com/JohnSpahr/GoFrench/blob/master/Go
 ### Download branch
 This link downloads the branch: https://github.com/JohnSpahr/GoFrench/archive/master.zip.
 
+### Get it on Google Play
+GoFrench is available on Google Play! https://play.google.com/store/apps/details?id=com.gofrench
+
 ### Screenshot
 ![Image of GoFrench](https://raw.githubusercontent.com/JohnSpahr/GoFrench/master/Screenshot%20(1).png)
