@@ -11,16 +11,16 @@ If you can just go the WordReference or Linguee, why would you use GoFrench? Put
 GoFrench isn't finished! There is still a lot of improvements we can make. I don't care what you do with it, as long as you credit me. (John Spahr)
 
 ### Visit our website
-Want to try out GoFrench! If so, you should visit our website: https://tectrasystems.org/gofrench.
+Want to try out GoFrench! If so, you should visit our website: [GoFrench](https://tectrasystems.org/gofrench).
 
 ### Link to the code
-Here is a link to the code: https://github.com/JohnSpahr/GoFrench/blob/master/GoFrench%20v1.2.html.
+Here is a link to the code: [The Code](https://github.com/JohnSpahr/GoFrench/blob/master/GoFrench%20v1.2.html).
 
 ### Download branch
-This link downloads the branch: https://github.com/JohnSpahr/GoFrench/archive/master.zip.
+This link downloads the branch: [Download](https://github.com/JohnSpahr/GoFrench/archive/master.zip).
 
 ### Get it on Google Play
-GoFrench is available on Google Play! https://play.google.com/store/apps/details?id=com.gofrench
+GoFrench is available on Google Play! [Google Play Listing](https://play.google.com/store/apps/details?id=com.gofrench).
 
 ### Screenshot
 ![Image of GoFrench](https://raw.githubusercontent.com/JohnSpahr/GoFrench/master/Screenshot%20(1).png)
