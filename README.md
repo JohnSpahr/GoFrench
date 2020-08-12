@@ -1,20 +1,6 @@
 # GoFrench
-GoFrench is a French to English (and vice versa) translation tool. It finds the best translation and definition for a word or phrase from two sources. (WordReference and Linguee) 
+GoFrench is a portal to all things French!
 
-### How does it work?
-To use GoFrench, simply enter a word or phrase into the text box. If you only enter one word, you will be sent to WordReference which does a really good job at describing a specific word. If you type in multiple words, however, you will be sent to Linguee, a website that gives great definitions and translations for multiple words and phrases.
+You can easily go to educational and helpful sites for learning French, search for a word or phrase and be sent to WordReference or Linguee depending on your query, and read the latest French news, all in one place. For this reason, GoFrench is a great tool for teachers!
 
-### Why should I use GoFrench?
-If you can just go the WordReference or Linguee, why would you use GoFrench? Put simply, it simplifies the process. Being able to get the best result from one source saves a lot of time, especially during class. It's easy to use like Google Translate, but also provides more accurate translations and a definition.
-
-### Contribute
-GoFrench isn't finished! There is still a lot of improvements we can make. I don't care what you do with it, as long as you credit me. (John Spahr)
-
-### Visit our website
-Want to try out GoFrench! If so, you should visit our website: [GoFrench](https://tectrasystems.org/gofrench).
-
-### Link to the code
-Here is a link to the code: [The Code](https://github.com/JohnSpahr/GoFrench/blob/master/GoFrench%20v1.2.html).
-
-### Download branch
-This link downloads the branch: [Download](https://github.com/JohnSpahr/GoFrench/archive/master.zip)
+Try it out: [GoFrench](https://tectrasystems.org/gofrench)
