@@ -1,0 +1,132 @@
+body {
+    background-image: linear-gradient(blue, white, red);
+    padding-bottom: 50pt;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.sticky {
+    z-index: 2147483647;
+    top: 0;
+    position: sticky;
+}
+
+h2 {
+    color: blue;
+}
+
+.searchArea {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    vertical-align: middle;
+}
+
+.search {
+    font-size: 40px;
+    border-radius: 5px;
+    width: 50%;
+    border-color: blue;
+    text-align: center;
+    background-color: white;
+    opacity: 90%;
+    border-style: solid;
+    border-width: 2px;
+}
+
+.article {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 25%;
+    padding-left: 25%;
+    vertical-align: middle;
+}
+
+.listing {
+    background-color: white;
+    opacity: 90%;
+    border-color: blue;
+    text-align: center;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2px;
+}
+
+.marginListing {
+    margin: 5px;
+}
+
+a {
+    color: blue;
+}
+
+.dropbtn {
+    border-color: blue;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2px;
+    background-color: white;
+    color: black;
+    opacity: 90%;
+    padding: 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+    background-color: red;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: relative;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+
+.coolnav {
+    margin-right: 45%;
+    margin-left: 45%;
+}
+
+.header {
+    font-size: 100px;
+    font-style: bold;
+    color: white;
+}
+
+.creator {
+    font-style: italic;
+    font-family: "Times New Roman", Times, serif;
+    color: white;
+    font-size: 40px;
+}

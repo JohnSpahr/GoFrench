@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8" />
+
+<head>
+    <title>GoFrench 2.0</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="stylesheets/mainstyle.css">
+</head>
+
+<body>
+    <br /><br /><br />
+    <div class="searchArea">
+        <h1 class="header">GoFrench 2.0</h1>
+        <p class="creator">Created by John Spahr</p>
+        <br /><br /><br />
+        <input id="inputTxt" tag autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" onkeypress="return txtChange(event)" class="search" type="search" placeholder="Enter a word or phrase..." />
+        <br /><br /><br />
+        <a id="dropdownPosition"></a>
+        <br /><br /><br />
+        <div class="dropdown">
+            <button onclick="showDropdown()" class="dropbtn">▼ Places To Go</button>
+            <div id="placesDropdown" class="dropdown-content">
+                <a href="https://wordreference.com" target="_blank">WordReference</a>
+                <a href="https://linguee.fr" target="_blank">Linguee</a>
+                <a href="https://duolingo.com" target="_blank">Duolingo</a>
+                <a href="https://laits.utexas.edu/fi" target="_blank">Français Interactif</a>
+                <a href="https://rfi.fr/fr" target="_blank">Radio France Internationale</a>
+                <a href="https://mediapart.fr" target="_blank">Mediapart</a>
+                <a href="https://github.com/johnspahr/gofrench" target="_blank">GoFrench GitHub Page</a>
+            </div>
+        </div>
+    </div>
+    <br /><br /><br />
+    <br><br><br>
+    <div class="listing sticky" id="latestFrenchNews">
+        <h1>Latest French News</h1>
+        <p>
+            Source:
+            <a href="https://mediapart.fr" target="_blank">https://mediapart.fr</a
+          >
+        </p>
+      </div>
+      <br />
+    </div>
+  </body>
+</html>
+
+<script>
+  //focus on inputTxt when GoFrench loads
+  document.getElementById("inputTxt").focus();
+
+  function txtChange(e) {
+      if (e.keyCode == 13) {
+        //if enter key is pressed, get site
+        getSite();
+        return false;
+      }
+    }
+
+    // On dropdown button click event
+    function showDropdown() {
+      const id = 'dropdownPosition';
+      const yourElement = document.getElementById(id);
+      const y = yourElement.getBoundingClientRect().top + window.pageYOffset;
+
+      window.scrollTo({ top: y, behavior: 'smooth' });
+      document.getElementById("placesDropdown").classList.toggle("show");
+    }
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function (e) {
+      if (!e.target.matches(".dropbtn")) {
+        var placesDropdown = document.getElementById("placesDropdown");
+        if (placesDropdown.classList.contains("show")) {
+          placesDropdown.classList.remove("show");
+        }
+      }
+    };
+
+    function getSite() {
+      var inputString = document.getElementById("inputTxt").value.trim(); //trims input
+
+      if (inputString != "") {
+        //makes sure text box isn't blank
+        var content = document.getElementById("inputTxt").value; //sets variable "content" to text box value
+        var countText = content.trim(); //removes unnecessary spaces at the end of text
+        var count = (countText.match(/ /g) || []).length; //gets number of spaces in text box.
+
+        if (count == 0) {
+          //no spaces
+          //open wordreference
+          window.open("http://www.wordreference.com/enfr/" + countText, "_blank");
+        } else {
+          //spaces
+          //open linguee
+          window.open(
+            "http://linguee.com/english-french/search?source=auto&query=" +
+            countText,
+            "_blank"
+          );
+        }
+
+        document.getElementById("inputTxt").value = "";
+      } else {
+        alert("Please enter a search query."); //if input is blank
+      }
+    }
+
+    const RSS_URL = `https://www.mediapart.fr/articles/feed`;
+
+    //get latest French news from Mediapart
+    $.ajax(RSS_URL, {
+      accepts: {
+        xml: "application/rss+xml",
+      },
+
+      dataType: "xml",
+
+      success: function (data) {
+        $(data)
+          .find("item")
+          .each(function () {
+            const el = $(this);
+
+            const template = `
+          <article class="article">
+          <div class="listing">
+            <h2 class="marginListing">
+              <a href="${el
+                .find("link")
+                .text()}" target="_blank" rel="noopener">
+                ${el.find("title").text()}
+              </a>
+            </h2>
+            <p class="marginListing">
+                ${el.find("description").text()}
+            </p>
+    </div>
+    </article>
+    <br><br> `; document.body.insertAdjacentHTML("beforeend", template); }); }, });
+    </script>
