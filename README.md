@@ -17,10 +17,4 @@ Want to try out GoFrench! If so, you should visit our website: [GoFrench](https:
 Here is a link to the code: [The Code](https://github.com/JohnSpahr/GoFrench/blob/master/GoFrench%20v1.2.html).
 
 ### Download branch
-This link downloads the branch: [Download](https://github.com/JohnSpahr/GoFrench/archive/master.zip).
-
-### Get it on Google Play
-GoFrench is available on Google Play! [Google Play Listing](https://play.google.com/store/apps/details?id=com.gofrench).
-
-### Screenshot
-![Image of GoFrench](https://raw.githubusercontent.com/JohnSpahr/GoFrench/master/Screenshot%20(1).png)
+This link downloads the branch: [Download](https://github.com/JohnSpahr/GoFrench/archive/master.zip)
