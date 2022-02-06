@@ -1,0 +1,197 @@
+<!--
+   ______      ______                     __       __                 __      __             _____             __        
+  / ____/___  / ____/_______  ____  _____/ /_     / /_  __  __       / /___  / /_  ____     / ___/____  ____ _/ /_  _____
+ / / __/ __ \/ /_  / ___/ _ \/ __ \/ ___/ __ \   / __ \/ / / /  __  / / __ \/ __ \/ __ \    \__ \/ __ \/ __ `/ __ \/ ___/
+/ /_/ / /_/ / __/ / /  /  __/ / / / /__/ / / /  / /_/ / /_/ /  / /_/ / /_/ / / / / / / /   ___/ / /_/ / /_/ / / / / /    
+\____/\____/_/   /_/   \___/_/ /_/\___/_/ /_/  /_.___/\__, /   \____/\____/_/ /_/_/ /_/   /____/ .___/\__,_/_/ /_/_/     
+                                                     /____/                                   /_/                        
+                                                     
+Copyright (c) John Spahr, 2019-2022. Do not copy or replicate this code.
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Page Title! -->
+    <title>GoFrench: Your Portal for French Resources!</title>
+
+    <!-- Meta Stuff -->
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="John Spahr" />
+    <meta
+      property="og:title"
+      content="GoFrench: Your Portal for French Resources!"
+    />
+    <meta name="twitter:card" content="summary" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://johnspahr.org/web/gofrench" />
+    <meta
+      property="og:image"
+      content="https://johnspahr.org/images/icons/gofrench.png"
+    />
+    <meta
+      property="og:description"
+      content="GoFrench is a portal to resources for learning French! It lets you quickly look up words and phrases, and it makes it easy to find helpful resources for learning and mastering the language."
+    />
+    <meta
+      name="description"
+      content="GoFrench is a portal to resources for learning French! It lets you quickly look up words and phrases, and it makes it easy to find helpful resources for learning and mastering the language."
+    />
+    <meta name="theme-color" content="#4458be" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta charset="UTF-8" />
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/b0a2c45541.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="stylesheets/bootstrap.min.css" />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="stylesheets/mainstyle.css" />
+
+    <!-- GoFrench Script -->
+    <script src="script.js"></script>
+
+    <!-- Favicon and Theme Stuff -->
+    <link
+      rel="apple-touch-icon"
+      href="https://johnspahr.org/images/icons/gofrench.png"
+      sizes="180x180"
+    />
+    <link
+      rel="icon"
+      href="https://johnspahr.org/images/icons/gofrench.png"
+      sizes="32x32"
+      type="image/png"
+    />
+    <link
+      rel="icon"
+      href="https://johnspahr.org/images/icons/gofrench.png"
+      sizes="16x16"
+      type="image/png"
+    />
+    <link
+      rel="icon"
+      href="https://johnspahr.org/images/logo.ico"
+      type="image/ico"
+    />
+  </head>
+
+  <body>
+    <!-- Title Bar -->
+    <div class="titleBar sticky">
+      <span class="menuToggle" onclick="openNav()"
+        ><span class="logo"><i class="fas fa-bars"></i>&nbsp;GoFrench</span></span
+      >
+    </div>
+
+    <!-- Navigation Drawer -->
+    <div id="sidenavDrawer" class="sidenav">
+      <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <b><i class="fas fa-globe-europe"></i> Language</b>
+      <a href="https://wordreference.com" target="_blank">WordReference</a>
+      <a href="https://linguee.fr" target="_blank">Linguee</a>
+      <a href="https://laits.utexas.edu/fi" target="_blank"
+        >Français Interactif</a
+      >
+      <hr />
+      <b><i class="fas fa-chalkboard-teacher"></i> Practice</b>
+      <a href="https://duolingo.com" target="_blank">Duolingo</a>
+      <a href="https://conjuguemos.com/" target="_blank">Conjuguemos</a>
+      <a href="https://languagedrops.com/" target="_blank">Drops</a>
+      <a href="https://memrise.com/" target="_blank">Memrise</a>
+      <hr />
+      <b><i class="fas fa-newspaper"></i> News</b>
+      <a href="https://rfi.fr/fr" target="_blank"
+        >Radio France Internationale</a
+      >
+      <a href="https://www.1jour1actu.com/" target="_blank">1 jour 1 actu</a>
+      <a href="https://www.france24.com/fr/" target="_blank">France 24</a>
+      <hr />
+      <b><i class="fas fa-keyboard"></i> Accents</b>
+      <a href="https://french.typeit.org" target="_blank">French - Type It</a>
+      <a
+        href="https://docs.google.com/document/d/1thHf4Donhmkb8Iyl0lQ4Ds0qbMhhKBpXupplrzu7gKk/edit"
+        target="_blank"
+        >Google Doc Guide</a
+      >
+      <hr />
+      <b><i class="fas fa-music"></i> Music</b>
+      <a
+        href="https://sites.google.com/yorkschools.org/maniemusicale2017"
+        target="_blank"
+        >Manie Musicale</a
+      >
+      <a
+        href="https://sites.google.com/view/musiquedelafrancophonie"
+        target="_blank"
+        >Musique de la Francophonie</a
+      >
+      <a
+        href="https://open.spotify.com/playlist/68J0dTR0LuUgkrkjAYfSJZ?si=YqTC-xFfQf-I-4ociYUABA "
+        target="_blank"
+        >Spotify Playlist</a
+      >
+      <hr />
+      <b><i class="fas fa-ellipsis-h"></i> Other</b>
+      <a
+        href="https://docs.google.com/document/d/1L7VVRefc06Q5wVHrfCQiFH29mBb7-vtk7CGC38t_mSk/edit"
+        target="_blank"
+        >Resources List</a
+      >
+      <br />
+    </div>
+
+    <!-- Main Stuff -->
+    <main>
+      <br />
+      <span class="title">GoFrench</span>
+      <br />
+      <p><b>Your portal to resources for learning French!</b></p>
+      <br />
+      <input
+        id="inputTxt"
+        autocomplete="off"
+        autocorrect="off"
+        autocapitalize="off"
+        spellcheck="false"
+        onkeypress="return txtChange(event)"
+        class="search"
+        type="search"
+        placeholder="Look up a word or phrase here..."
+      />
+      <p>or <a href="#" onclick="openNav()">view the French Links List</a>.</p>
+      <hr />
+      <div class="island">
+        <h3><i class="fas fa-globe"></i> Why Learn French?</h3>
+        <br />
+        <h4>2nd most</h4>
+        <p>learned language</p>
+        <hr />
+        <h4>5th most</h4>
+        <p>spoken language in the world</p>
+        <hr />
+        <h4>30% to 50%</h4>
+        <p>of English words come from French</p>
+        <hr />
+        <h4>Around 300 million</h4>
+        <p>speakers worldwide</p>
+        <br />
+      </div>
+      <hr />
+      <p>
+        &copy; 2022 John Spahr -
+        <a href="https://johnspahr.org" target="_blank">More Software</a>
+      </p>
+    </main>
+  </body>
+</html>
