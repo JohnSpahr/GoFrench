@@ -75,11 +75,4 @@ $(document).ready(function() {
             document.getElementById("news").innerHTML += "<div class='island'><h3><a href='" + el.find("link").text() + "' target='_blan'>" + el.find("title").text() + "</a></h3><p>" + el.find("description").text() + "</p></div>"
         });
     });
-
-    //fetch word of the day and embed it in iFrame...
-    var today = new Date();
-    var url = 'http://200words-a-day.com/';
-    var todaystr = today.getDate();
-    var text = document.getElementById('two_hundred_words_french-word');
-    text.innerHTML = "<iframe class='frame' frameborder='0' width='250' height='300' scrolling='no' src='" + url + todaystr + ".french-word-a-day.html' />";
 });
