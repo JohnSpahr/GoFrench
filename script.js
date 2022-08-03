@@ -74,4 +74,8 @@ $(document).ready(function() {
             document.getElementById("news").innerHTML += "<div class='island'><h3><a href='" + el.find("link").text() + "' target='_blan'>" + el.find("title").text() + "</a></h3><p>" + el.find("description").text() + "</p></div>"
         });
     });
+
+    if ($(window).width() < 540) {
+        document.getElementById("widget").innerHTML = '<iframe src="https://www.innovativelanguage.com/widgets/wotd/embed.php?language=French&type=small&bg=%23222222&content=%23fff&header=%23222222&highlight=%23333333&opacity=1&scrollbg=%23fefefe&sound=%23555555&text=%23afccff&quiz=N" width="160" height="190" frameborder="0" scrolling="no"></iframe>';
+    }
 });
