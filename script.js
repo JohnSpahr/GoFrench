@@ -78,7 +78,7 @@ $(document).ready(function() {
 
     //fetch word of the day and embed it in iFrame...
     var today = new Date();
-    var url = 'https://www.200words-a-day.com/';
+    var url = 'http://200words-a-day.com/';
     var todaystr = today.getDate();
     var text = document.getElementById('two_hundred_words_french-word');
     text.innerHTML = "<iframe class='frame' frameborder='0' width='250' height='300' scrolling='no' src='" + url + todaystr + ".french-word-a-day.html' />";
