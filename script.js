@@ -70,7 +70,6 @@ $(document).ready(function() {
     $.get("https://feeds.thelocal.com/rss/fr", function(data) {
         $(data).find("item").each(function() {
             var el = $(this);
-
             //for each item, create an island with article title, link, and description...
             document.getElementById("news").innerHTML += "<div class='island'><h3><a href='" + el.find("link").text() + "' target='_blan'>" + el.find("title").text() + "</a></h3><p>" + el.find("description").text() + "</p></div>"
         });
