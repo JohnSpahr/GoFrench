@@ -6,48 +6,31 @@
 \____/\____/_/   /_/   \___/_/ /_/\___/_/ /_/  /_.___/\__, /   \____/\____/_/ /_/_/ /_/   /____/ .___/\__,_/_/ /_/_/     
                                                      /____/                                   /_/                        
                                                      
-Copyright (c) John Spahr, 2019-2022. Do not copy or replicate this code.
+Copyright (c) John Spahr, 2019-2022. 
 -->
 
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <!-- Page Title! -->
     <title>GoFrench: Your Portal for French Resources!</title>
 
     <!-- Meta Stuff -->
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="author" content="John Spahr" />
-    <meta
-      property="og:title"
-      content="GoFrench: Your Portal for French Resources!"
-    />
+    <meta property="og:title" content="GoFrench: Your Portal for French Resources!" />
     <meta name="twitter:card" content="summary" />
     <meta property="og:type" content="website" />
-    <meta
-      property="og:image"
-      content="gofrench.png"
-    />
-    <meta
-      property="og:description"
-      content="GoFrench is a portal to resources for learning French! It lets you quickly look up words and phrases, and it makes it easy to find helpful resources for learning and mastering the language."
-    />
-    <meta
-      name="description"
-      content="GoFrench is a portal to resources for learning French! It lets you quickly look up words and phrases, and it makes it easy to find helpful resources for learning and mastering the language."
-    />
-    <meta name="theme-color" content="#4458be" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta property="og:image" content="gofrench.png" />
+    <meta property="og:description" content="GoFrench is a portal to resources for learning French! It lets you quickly look up words and phrases, and it makes it easy to find helpful resources for learning and mastering the language." />
+    <meta name="description" content="GoFrench is a portal to resources for learning French! It lets you quickly look up words and phrases, and it makes it easy to find helpful resources for learning and mastering the language." />
+    <meta name="theme-color" content="#7ab6ff" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta charset="UTF-8" />
 
     <!-- Font Awesome -->
-    <script
-      src="https://kit.fontawesome.com/b0a2c45541.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/b0a2c45541.js" crossorigin="anonymous"></script>
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="stylesheets/bootstrap.min.css" />
@@ -55,68 +38,49 @@ Copyright (c) John Spahr, 2019-2022. Do not copy or replicate this code.
     <!-- Stylesheet -->
     <link rel="stylesheet" type="text/css" href="stylesheets/mainstyle.css" />
 
+    <!-- JQUERY Script -->
+    <script type="text/javascript" src="./jquery-1.4.3.min.js"></script>
+
     <!-- GoFrench Script -->
-    <script src="script.js"></script>
+    <script type="text/javascript" src="script.js"></script>
 
     <!-- Favicon and Theme Stuff -->
-    <link
-      rel="apple-touch-icon"
-      href="gofrench.png"
-      sizes="180x180"
-    />
-    <link
-      rel="icon"
-      href="gofrench.png"
-      sizes="32x32"
-      type="image/png"
-    />
-    <link
-      rel="icon"
-      href="gofrench.png"
-      sizes="16x16"
-      type="image/png"
-    />
-  </head>
+    <link rel="apple-touch-icon" href="gofrench.png" sizes="180x180" />
+    <link rel="icon" href="gofrench.png" sizes="32x32" type="image/png" />
+    <link rel="icon" href="gofrench.png" sizes="16x16" type="image/png" />
+</head>
 
-  <body>
+<body>
     <!-- Title Bar -->
     <div class="titleBar sticky">
-      <span class="menuToggle" onclick="openNav()"
-        ><span class="logo"><i class="fas fa-bars"></i>&nbsp;GoFrench</span></span
-      >
+        <span class="menuToggle" onclick="openNav()"><span class="logo"><i class="fas fa-bars"></i>&nbsp;GoFrench</span></span>
     </div>
 
     <!-- Navigation Drawer -->
     <div id="sidenavDrawer" class="sidenav">
-      <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()"
-        >&times;</a
+        <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a
       >
       <b><i class="fas fa-globe-europe"></i> Language</b>
       <a href="https://wordreference.com" target="_blank">WordReference</a>
-      <a href="https://linguee.fr" target="_blank">Linguee</a>
-      <a href="https://laits.utexas.edu/fi" target="_blank"
-        >Français Interactif</a
+        <a href="https://linguee.fr" target="_blank">Linguee</a>
+        <a href="https://laits.utexas.edu/fi" target="_blank">Français Interactif</a
       >
       <hr />
       <b><i class="fas fa-chalkboard-teacher"></i> Practice</b>
       <a href="https://duolingo.com" target="_blank">Duolingo</a>
-      <a href="https://conjuguemos.com/" target="_blank">Conjuguemos</a>
-      <a href="https://languagedrops.com/" target="_blank">Drops</a>
-      <a href="https://memrise.com/" target="_blank">Memrise</a>
-      <hr />
-      <b><i class="fas fa-newspaper"></i> News</b>
-      <a href="https://rfi.fr/fr" target="_blank"
-        >Radio France Internationale</a
+        <a href="https://conjuguemos.com/" target="_blank">Conjuguemos</a>
+        <a href="https://languagedrops.com/" target="_blank">Drops</a>
+        <a href="https://memrise.com/" target="_blank">Memrise</a>
+        <hr />
+        <b><i class="fas fa-newspaper"></i> News</b>
+        <a href="https://rfi.fr/fr" target="_blank">Radio France Internationale</a
       >
       <a href="https://www.1jour1actu.com/" target="_blank">1 jour 1 actu</a>
-      <a href="https://www.france24.com/fr/" target="_blank">France 24</a>
-      <hr />
-      <b><i class="fas fa-keyboard"></i> Accents</b>
-      <a href="https://french.typeit.org" target="_blank">French - Type It</a>
-      <a
-        href="https://docs.google.com/document/d/1thHf4Donhmkb8Iyl0lQ4Ds0qbMhhKBpXupplrzu7gKk/edit"
-        target="_blank"
-        >Google Doc Guide</a
+        <a href="https://www.france24.com/fr/" target="_blank">France 24</a>
+        <hr />
+        <b><i class="fas fa-keyboard"></i> Accents</b>
+        <a href="https://french.typeit.org" target="_blank">French - Type It</a>
+        <a href="https://docs.google.com/document/d/1thHf4Donhmkb8Iyl0lQ4Ds0qbMhhKBpXupplrzu7gKk/edit" target="_blank">Google Doc Guide</a
       >
       <hr />
       <b><i class="fas fa-music"></i> Music</b>
@@ -148,7 +112,7 @@ Copyright (c) John Spahr, 2019-2022. Do not copy or replicate this code.
     <!-- Main Stuff -->
     <main>
       <br />
-      <span class="title">GoFrench</span>
+      <img src="gofrench.png" alt="GoFrench" width="180px">
       <br />
       <p><b>Your portal to resources for learning French!</b></p>
       <br />
@@ -164,28 +128,30 @@ Copyright (c) John Spahr, 2019-2022. Do not copy or replicate this code.
         placeholder="Look up a word or phrase here..."
       />
       <p>or <a href="#" onclick="openNav()">view the French Links List</a>.</p>
-      <hr />
-      <div class="island">
-        <h3><i class="fas fa-globe"></i> Why Learn French?</h3>
-        <br />
-        <h4>2nd most</h4>
-        <p>learned language</p>
         <hr />
-        <h4>5th most</h4>
-        <p>spoken language in the world</p>
+        <!-- WORD OF THE DAY -->
+        <h3>Word of the Day</h3>
+        <div id="two_hundred_words_french-word"></div>
         <hr />
-        <h4>30% to 50%</h4>
-        <p>of English words come from French</p>
+        <!-- WEATHER -->
+        <h3>Weather in Paris</h3>
+        <iframe class="frame" src="https://www.meteoblue.com/fr/meteo/widget/daily/paris_france_2988507?geoloc=fixed&days=7&tempunit=CELSIUS&windunit=KILOMETER_PER_HOUR&precipunit=MILLIMETER&coloured=monochrome&pictoicon=0&pictoicon=1&maxtemperature=0&maxtemperature=1&mintemperature=0&mintemperature=1&windspeed=0&windspeed=1&windgust=0&windgust=1&winddirection=0&winddirection=1&uv=0&uv=1&humidity=0&humidity=1&precipitation=0&precipitation=1&precipitationprobability=0&precipitationprobability=1&spot=0&spot=1&pressure=0&pressure=1&layout=light"
+            frameborder="0" scrolling="NO" allowtransparency="true" sandbox="allow-same-origin allow-scripts allow-popups allow-popups-to-escape-sandbox" style="width: 378px; height: 449px"></iframe>
+        <div>
+            <!-- DO NOT REMOVE THIS LINK --><a href="https://www.meteoblue.com/fr/meteo/semaine/paris_france_2988507?utm_source=weather_widget&utm_medium=linkus&utm_content=daily&utm_campaign=Weather%2BWidget" target="_blank" rel="noopener">meteoblue</a></div>
         <hr />
-        <h4>Around 300 million</h4>
-        <p>speakers worldwide</p>
-        <br />
-      </div>
-      <hr />
-      <p>
-        &copy; 2022 John Spahr -
-        <a href="https://github.com/johnspahr" target="_blank">More Software</a>
-      </p>
-    </main>
-  </body>
+        <!-- NEWS -->
+        <div id="news">
+            <h3>Latest French News</h3>
+            <p>From <a href="https://thelocal.com" target="_blank"><i>The Local</i></a>
+        </div>
+        <hr />
+        <p>
+            &copy; 2022 John Spahr -
+            <a href="https://github.com/johnspahr" target="_blank">More Software</a>
+        </p>
+        <h6>Version 5.0.1</h6>
+        </main>
+</body>
+
 </html>
