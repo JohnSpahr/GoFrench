@@ -76,6 +76,7 @@ $(document).ready(function() {
     });
 
     if ($(window).width() < 540) {
+        //if on mobile, display smaller word of the day widget
         document.getElementById("widget").innerHTML = '<iframe src="https://www.innovativelanguage.com/widgets/wotd/embed.php?language=French&type=small&bg=%23222222&content=%23fff&header=%23222222&highlight=%23333333&opacity=1&scrollbg=%23fefefe&sound=%23555555&text=%23afccff&quiz=N" width="160" height="190" frameborder="0" scrolling="no"></iframe>';
     }
 });
