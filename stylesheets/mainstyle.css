@@ -73,7 +73,7 @@ a:hover {
     color: #aaa;
     display: block;
     transition: 0.5s;
-    width: 120px;
+    max-width: 120px;
     text-align: center;
     display: inline-table;
 }
@@ -109,6 +109,7 @@ a:hover {
     top: 0;
     right: 0;
     font-size: 36px;
+    padding-top: 2px;
 }
 
 .sidenav img {
