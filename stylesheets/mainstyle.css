@@ -89,7 +89,7 @@ a:hover {
 
 .sidenav p {
     color: #aaa;
-    padding: 8px 8px 8px 32px;
+    padding: 8px 32px 8px 32px;
 }
 
 .sidenav h2 {
@@ -107,8 +107,7 @@ a:hover {
 .sidenav .closeBtn {
     position: absolute;
     top: 0;
-    right: 20px;
-    width: 20px;
+    right: 0;
     font-size: 36px;
 }
 
