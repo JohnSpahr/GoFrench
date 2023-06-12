@@ -6,7 +6,7 @@
 \____/\____/_/   /_/   \___/_/ /_/\___/_/ /_/  /_.___/\__, /   \____/\____/_/ /_/_/ /_/   /____/ .___/\__,_/_/ /_/_/     
                                                      /____/                                   /_/                        
                                                      
-Copyright (c) John Spahr, 2019-2022. 
+Copyright (c) John Spahr, 2019-2023. 
 */
 
 body {
@@ -38,7 +38,6 @@ hr {
     text-align: center;
     padding: 5px, 2px, 5px, 2px;
     margin-bottom: 8px;
-    border-radius: 25px;
     margin-left: auto;
     margin-right: auto;
     width: 90%;
@@ -67,18 +66,38 @@ a:hover {
     padding-top: 60px;
 }
 
-.sidenav a,
-.sidenav b {
+.sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
     color: #aaa;
     display: block;
-    transition: 0.1s;
+    transition: 0.5s;
+    width: 120px;
+    text-align: center;
+    display: inline-table;
 }
 
 .sidenav b {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+    transition: 0.5s;
     color: white;
+}
+
+.sidenav p {
+    color: #aaa;
+    padding: 8px 8px 8px 32px;
+}
+
+.sidenav h2 {
+    color: white;
+    position: absolute;
+    left: 20px;
+    top: 0;
+    padding-top: 2px;
 }
 
 .sidenav a:hover {
@@ -88,9 +107,16 @@ a:hover {
 .sidenav .closeBtn {
     position: absolute;
     top: 0;
-    right: 25px;
+    right: 20px;
+    width: 20px;
     font-size: 36px;
-    margin-left: 50px;
+}
+
+.sidenav img {
+    width: 64px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #main {

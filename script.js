@@ -6,7 +6,7 @@
 \____/\____/_/   /_/   \___/_/ /_/\___/_/ /_/  /_.___/\__, /   \____/\____/_/ /_/_/ /_/   /____/ .___/\__,_/_/ /_/_/     
                                                      /____/                                   /_/                        
 
-Copyright (c) John Spahr, 2019-2022. 
+Copyright (c) John Spahr, 2019-2023. 
 */
 
 //focus on inputTxt when GoFrench loads
@@ -29,7 +29,7 @@ function txtChange(e) {
 
 //open hamburger menu
 function openNav() {
-    document.getElementById('sidenavDrawer').style.width = '250px'
+    document.getElementById('sidenavDrawer').style.width = '100%'
 }
 
 //close hamburger menu
@@ -75,7 +75,7 @@ $(document).ready(function() {
         });
     });
 
-    if ($(window).width() < 540) {
+    if ($(window).width() < 560) {
         //if on mobile, display smaller word of the day widget
         document.getElementById("widget").innerHTML = '<iframe src="https://www.innovativelanguage.com/widgets/wotd/embed.php?language=French&type=small&bg=%23222222&content=%23fff&header=%23222222&highlight=%23333333&opacity=1&scrollbg=%23fefefe&sound=%23555555&text=%23afccff&quiz=N" width="160" height="190" frameborder="0" scrolling="no"></iframe>';
     }
