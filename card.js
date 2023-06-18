@@ -72,7 +72,7 @@ function generateCard() {
         reader.onload = function(e) {
                 // the result image data
                 //generate card...
-                document.getElementById("generatedCard").innerHTML = "<img class='pfp' alt='Failed to load image' src='" + e.target.result + "'/><h1>Bonjour, je m'appelle " + nameTxt + "</h1><hr><h3>" + bioTxt + "</h4><hr><h3>J'aime...</h3><div class='bubbleSection'>" + interests + "</div><hr><h3>Suivez-moi sur...</h3><div class='bubbleSection'>" + socials + "</div>"
+                document.getElementById("generatedCard").innerHTML = "<img class='pfp' alt='Failed to load image' src='" + e.target.result + "'/><h1>Bonjour, je m'appelle " + nameTxt + "</h1><hr><p>" + bioTxt + "</p><hr><h2>J'aime...</h2><div class='bubbleSection'>" + interests + "</div><hr><h2>Suivez-moi sur...</h2><div class='bubbleSection'>" + socials + "</div>"
             }
             // you have to declare the file loading
         reader.readAsDataURL(file);

@@ -64,27 +64,27 @@ Copyright (c) John Spahr, 2019-2023.
             <h1><i class="fa-solid fa-address-card"></i>&nbsp;Créez votre carte d'identité</h1>
             <hr>
             <p><b>Votre nom:</b></p>
-            <input id="nameTxt" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Votre nom..." />
+            <input id="nameTxt" maxlength="90" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Votre nom..." />
             <hr>
             <p><b>Courte biographie:</b></p>
-            <textarea id="bioTxt" onkeyup="textCounter(this,'counterLbl',512);" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Écrivez une courte biographie en français..."></textarea>
-            <p id="counterLbl">512 character(s) remaining</p>
+            <textarea id="bioTxt" style="resize: vertical;" onkeyup="textCounter(this, 'counterLbl', 1024);" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Écrivez une courte biographie en français..."></textarea>
+            <p id="counterLbl">1024 character(s) remaining</p>
             <hr>
             <h2>Vos intérêts:</h2>
             <h3>J'aime...</h3>
-            <input id="interest1" maxlength="60" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Donnez une activité..." />
-            <input id="interest2" maxlength="60" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Donnez une activité..." />
-            <input id="interest3" maxlength="60" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Donnez une activité..." />
-            <input id="interest4" maxlength="60" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Donnez une activité..." />
-            <input id="interest5" maxlength="60" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Donnez une activité..." />
+            <input id="interest1" maxlength="90" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Donnez une activité..." />
+            <input id="interest2" maxlength="90" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Donnez une activité..." />
+            <input id="interest3" maxlength="90" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Donnez une activité..." />
+            <input id="interest4" maxlength="90" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Donnez une activité..." />
+            <input id="interest5" maxlength="90" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Donnez une activité..." />
             <hr>
             <h2>Profils sociaux:</h2>
             <p><i class='fa-brands fa-instagram'></i>&nbsp;<b>Instagram:</b></p>
-            <input id="instagramTxt" maxlength="30" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Entrez votre nom d'utilisateur Instagram..." />
+            <input id="instagramTxt" maxlength="60" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Entrez votre nom d'utilisateur Instagram..." />
             <p><i class='fa-brands fa-snapchat'></i>&nbsp;<b>Snapchat:</b></p>
-            <input id="snapchatTxt" maxlength="30" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Entrez votre nom d'utilisateur Snapchat..." />
+            <input id="snapchatTxt" maxlength="60" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Entrez votre nom d'utilisateur Snapchat..." />
             <p><i class='fa-brands fa-facebook'></i>&nbsp;<b>Facebook:</b></p>
-            <input id="facebookTxt" maxlength="30" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Entrez votre nom d'utilisateur Facebook..." />
+            <input id="facebookTxt" maxlength="60" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Entrez votre nom d'utilisateur Facebook..." />
             <hr>
             <h3>Une photo de vous:</h3>
             <input type="file" id="imageUpload">

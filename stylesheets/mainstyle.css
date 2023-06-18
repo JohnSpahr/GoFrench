@@ -53,6 +53,11 @@ a:hover {
     text-decoration: none;
 }
 
+.logo,
+.toggleBtn {
+    margin-bottom: 20px;
+}
+
 .sidenav {
     height: 100%;
     width: 0;
@@ -228,12 +233,13 @@ main {
     width: 90%;
 }
 
-.cardIsland li {
-    font-size: 24px;
-}
-
 .cardHolder {
     display: none;
+}
+
+.cardHolder p,
+.cardHolder span {
+    font-size: 20px;
 }
 
 .leftCard {
@@ -244,7 +250,7 @@ main {
     background-color: #111;
     color: white;
     font-size: 24px;
-    padding: 8px;
+    padding: 12px;
     margin: 10px;
     border-radius: 25px;
 }
@@ -257,7 +263,7 @@ main {
 .pfp {
     width: 128px;
     height: 128px;
-    border-radius: 32px;
+    border-radius: 25px;
 }
 
 button {

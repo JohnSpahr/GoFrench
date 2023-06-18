@@ -32,6 +32,22 @@ function specialChar(button) {
     navigator.clipboard.writeText(button.innerHTML);
 }
 
+//toggle accents visibility
+function toggleChars(button) {
+    //get special chars div
+    var specialChars = document.getElementById("specialChars");
+
+    if (specialChars.style.display == "inline") {
+        //hide
+        specialChars.style.display = "none";
+        button.innerText = "Show Accents";
+    } else {
+        //show
+        specialChars.style.display = "inline";
+        button.innerText = "Hide Accents";
+    }
+}
+
 //open hamburger menu
 function openNav() {
     document.getElementById('sidenavDrawer').style.width = '100%'
