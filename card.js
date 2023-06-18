@@ -39,19 +39,19 @@ function generateCard() {
 
         //check to see if interests are blank. if not, create span for each interest listed.
         if (interest1.trim() != "") {
-            interests += "<li>" + interest1 + "</li>";
+            interests += "<span class='bubble'>" + interest1 + "</span>";
         }
         if (interest2.trim() != "") {
-            interests += "<li>" + interest2 + "</li>";
+            interests += "<span class='bubble'>" + interest2 + "</span>";
         }
         if (interest3.trim() != "") {
-            interests += "<li>" + interest3 + "</li>";
+            interests += "<span class='bubble'>" + interest3 + "</span>";
         }
         if (interest4.trim() != "") {
-            interests += "<li>" + interest4 + "</li>";
+            interests += "<span class='bubble'>" + interest4 + "</span>";
         }
         if (interest5.trim() != "") {
-            interests += "<li>" + interest5 + "</li>";
+            interests += "<span class='bubble'>" + interest5 + "</span>";
         }
 
         //string for social spans...
@@ -72,7 +72,7 @@ function generateCard() {
         reader.onload = function(e) {
                 // the result image data
                 //generate card...
-                document.getElementById("generatedCard").innerHTML = "<img class='pfp' alt='Failed to load image' src='" + e.target.result + "'/><h1>Bonjour, je m'appelle " + nameTxt + "</h1><hr><h3>" + bioTxt + "</h4><hr><h3>J'aime...</h3><ul>" + interests + "</ul><hr><h3>Suivez-moi sur...</h3><div class='bubbleSection'>" + socials + "</div>"
+                document.getElementById("generatedCard").innerHTML = "<img class='pfp' alt='Failed to load image' src='" + e.target.result + "'/><h1>Bonjour, je m'appelle " + nameTxt + "</h1><hr><h3>" + bioTxt + "</h4><hr><h3>J'aime...</h3><div class='bubbleSection'>" + interests + "</div><hr><h3>Suivez-moi sur...</h3><div class='bubbleSection'>" + socials + "</div>"
             }
             // you have to declare the file loading
         reader.readAsDataURL(file);
