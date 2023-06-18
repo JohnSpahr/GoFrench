@@ -179,3 +179,92 @@ main {
     color: white;
     margin-left: 10px;
 }
+
+
+/* Card Configurator */
+
+.cardIsland {
+    background-color: #333;
+    color: #fefefe;
+    margin-bottom: 25px;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #fefefe;
+    border-radius: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+.cardIsland hr {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+.cardIsland textarea {
+    background-color: #333;
+    color: white;
+    font-size: 16px;
+    height: 240px;
+    border: 1px solid #fefefe;
+    border-radius: 25px;
+    padding: 10px;
+    margin-bottom: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+.cardIsland input {
+    background-color: #333;
+    color: white;
+    font-size: 16px;
+    border: 1px solid #fefefe;
+    border-radius: 25px;
+    padding: 10px;
+    margin-bottom: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+.cardIsland li {
+    font-size: 24px;
+}
+
+.cardHolder {
+    display: none;
+}
+
+.leftCard {
+    text-align: left !important;
+}
+
+.bubble {
+    background-color: #111;
+    color: white;
+    font-size: 24px;
+    padding: 8px;
+    margin: 10px;
+    border-radius: 25px;
+}
+
+.pfp {
+    width: 128px;
+    height: 128px;
+    border-radius: 32px;
+}
+
+button {
+    background-color: #111;
+    color: white;
+    font-size: 16px;
+    border: 1px solid #fefefe;
+    border-radius: 25px;
+    padding: 10px 18px 10px 18px;
+    margin: 2px;
+}
+
+button:hover {
+    background-color: #555;
+}

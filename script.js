@@ -27,6 +27,11 @@ function txtChange(e) {
     }
 }
 
+//handle special chars buttons
+function specialChar(button) {
+    navigator.clipboard.writeText(button.innerHTML);
+}
+
 //open hamburger menu
 function openNav() {
     document.getElementById('sidenavDrawer').style.width = '100%'
