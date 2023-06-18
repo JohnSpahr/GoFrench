@@ -76,9 +76,9 @@ a:hover {
     text-decoration: none;
     font-size: 18px;
     color: #aaa;
-    display: block;
+    display: inline-block;
     transition: 0.5s;
-    max-width: 120px;
+    width: 120px;
     text-align: center;
     display: inline-table;
 }
@@ -102,7 +102,7 @@ a:hover {
     position: absolute;
     left: 20px;
     top: 0;
-    padding-top: 2px;
+    padding-top: 4px;
 }
 
 .sidenav a:hover {
@@ -114,7 +114,7 @@ a:hover {
     top: 0;
     right: 0;
     font-size: 36px;
-    padding-top: 2px;
+    margin-top: 4px;
 }
 
 .sidenav img {
