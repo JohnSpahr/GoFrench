@@ -29,7 +29,7 @@ hr {
 }
 
 .search {
-    background-color: #333;
+    background-color: #222;
     color: white;
     font-size: 16px;
     height: 40px;
@@ -207,7 +207,7 @@ main {
 }
 
 .cardIsland textarea {
-    background-color: #333;
+    background-color: #222;
     color: white;
     font-size: 16px;
     height: 240px;
@@ -221,7 +221,7 @@ main {
 }
 
 .cardIsland input {
-    background-color: #333;
+    background-color: #222;
     color: white;
     font-size: 16px;
     border: 1px solid #fefefe;
@@ -238,7 +238,8 @@ main {
 }
 
 .cardHolder p,
-.cardHolder span {
+.cardHolder span,
+.bigText {
     font-size: 20px;
 }
 
@@ -267,7 +268,7 @@ main {
 }
 
 button {
-    background-color: #111;
+    background-color: #222;
     color: white;
     font-size: 16px;
     border: 1px solid #fefefe;
