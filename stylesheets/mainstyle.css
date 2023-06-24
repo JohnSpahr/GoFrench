@@ -233,12 +233,12 @@ main {
     width: 90%;
 }
 
-.cardHolder {
+.generatedCard {
     display: none;
 }
 
-.cardHolder p,
-.cardHolder span,
+.generatedCard p,
+.generatedCard span,
 .bigText {
     font-size: 20px;
 }

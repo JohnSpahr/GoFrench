@@ -28,8 +28,8 @@ function generateCard() {
     var file = document.getElementById('imageUpload').files[0];
 
     if (file != null) {
-        //show cardHolder div
-        document.getElementById("cardHolder").style.display = "block";
+        //show generatedCard div
+        document.getElementById("generatedCard").style.display = "block";
 
         //get values from inputs...
         var nameTxt = document.getElementById("nameTxt").value;
@@ -83,6 +83,8 @@ function generateCard() {
         reader.onload = function(e) {
             //generate card...
             document.getElementById("generatedCard").innerHTML = "<img class='pfp' alt='Failed to load image' src='" + e.target.result + "'/><h1>Bonjour, je m'appelle " + nameTxt + "</h1><hr><p>" + bioTxt + "</p><hr><h2>J'aime...</h2><div class='bubbleSection'>" + interests + "</div><hr><h2>Suivez-moi sur...</h2><div class='bubbleSection'>" + socials + "</div>"
+            saveCard(); //save card
+            location.hash = "#generatedCard"; //jump to card on page
         }
         reader.readAsDataURL(file);
     } else {
