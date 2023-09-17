@@ -87,15 +87,6 @@ function getSite() {
 
 
 $(document).ready(function() {
-    //grab rss feed from the local with jquery
-    $.get("https://feeds.thelocal.com/rss/fr", function(data) {
-        $(data).find("item").each(function() {
-            var el = $(this);
-            //for each item, create an island with article title, link, and description...
-            document.getElementById("news").innerHTML += "<div class='island'><h3><a href='" + el.find("link").text() + "' target='_blan'>" + el.find("title").text() + "</a></h3><p>" + el.find("description").text() + "</p></div>"
-        });
-    });
-
     if ($(window).width() < 560) {
         //if on mobile, display smaller word of the day widget and hide accents
         document.getElementById("widget").innerHTML = '<iframe src="https://www.innovativelanguage.com/widgets/wotd/embed.php?language=French&type=small&bg=%23222222&content=%23fff&header=%23222222&highlight=%23333333&opacity=1&scrollbg=%23fefefe&sound=%23555555&text=%23afccff&quiz=N" width="160" height="190" frameborder="0" scrolling="no"></iframe>';
