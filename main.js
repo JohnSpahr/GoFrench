@@ -29,7 +29,8 @@ function txtChange(e) {
 
 //handle special chars buttons
 function specialChar(button) {
-    navigator.clipboard.writeText(button.innerHTML);
+    navigator.clipboard.writeText(button.innerHTML); //copy button text to clipboard
+    alert("Copied character to clipboard."); //give user feedback
 }
 
 //toggle accents visibility
